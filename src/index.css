@@ -1,13 +1,51 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: bisque;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  width: 350px;
+  height: 200px;
+  padding: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  text-align: center;
+  background-color: rgb(109, 116, 112);
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px 10px black;
+}
+.number {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  background-color: rgb(212, 213, 215);
+}
+button {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  margin: 1rem;
+  background-color: rgb(255, 162, 0);
+  cursor: pointer;
+}
+button:hover {
+  padding: 1.2rem;
+}
+.setNumber {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
 }
