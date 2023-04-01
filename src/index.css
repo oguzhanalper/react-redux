@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: bisque;
+  background: rgb(169, 130, 81);
 }
 
 code {
@@ -13,25 +13,12 @@ code {
     monospace;
 }
 
-.App {
-  width: 350px;
-  height: 200px;
-  padding: 1rem;
-  position: absolute;
-  top: 30%;
-  left: 38%;
-  text-align: center;
-  background-color: rgb(109, 116, 112);
-  border-radius: 2rem;
-  box-shadow: 0 10px 20px 10px black;
-}
 .number {
   display: flex;
   text-align: center;
   justify-content: center;
   font-size: larger;
   font-weight: bold;
-  background-color: rgb(212, 213, 215);
 }
 button {
   padding: 1rem;
@@ -48,4 +35,63 @@ button:hover {
   text-align: center;
   font-size: medium;
   font-weight: bold;
+}
+.App {
+  width: 550px;
+  height: 400px;
+  padding: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px 10px black;
+}
+#light {
+  background: #ffffffb7;
+  color: black;
+}
+#dark {
+  background: rgb(76, 76, 133);
+  color: #ffff;
+}
+.switch {
+  display: flex;
+  justify-content: center;
+}
+
+#light .switch {
+  color: black;
+}
+#dark .switch {
+  color: white;
+}
+
+.place {
+  background: rgb(76, 133, 85);
+  width: 3em;
+  border-radius: 1rem;
+  font-size: larger;
+}
+.made {
+  background: #2cb0a1;
+  border-radius: 3px;
+}
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.active {
+  background: rgba(165, 155, 61, 0.149);
+  border-width: 5px;
+  border-radius: 20px;
+  width: 6rem;
+}
+.passive {
+  background: rgb(152, 191, 236);
+  border-width: 5px;
+  border-radius: 20px;
+  width: 6rem;
 }

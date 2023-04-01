@@ -18,22 +18,23 @@ function CounterActions() {
         Azalt(-)
       </button>
       <button onClick={() => dispatch(increment())}>Arttır(+)</button>
-      <input
-        type="number"
-        onkeypress="return isNumberKey(value)"
-        className="setNumber"
-        aria-label="Set increment amount"
-        placeholder="Please enter any number"
-        value={incrementAmount}
-        onChange={(e) => setIncrementAmount(e.target.value)}
-      />
-      <button
-        onClick={() =>
-          dispatch(incrementByAmount(Number(incrementAmount)) || 0)
-        }
-      >
-        Add Amount
-      </button>
+      <div>
+        <input
+          type="number"
+          className="setNumber"
+          aria-label="Set increment amount"
+          placeholder="Please enter any number"
+          value={incrementAmount}
+          onChange={(e) => setIncrementAmount(e.target.value)}
+        />
+        <button
+          onClick={() =>
+            dispatch(incrementByAmount(Number(incrementAmount)) || 0)
+          }
+        >
+          Add Amount
+        </button>
+      </div>
       {/* <button onClick={() => dispatch(incrementByAmount(4))}>4+</button> */}
     </div>
   );
